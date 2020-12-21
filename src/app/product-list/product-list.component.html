@@ -1,0 +1,69 @@
+<br><br><br>
+
+<!--Add Data Table-->
+<table style="width:100%">
+	<tr>
+		<th>
+			<label for="fname">Restaurant:</label><br>
+			<input type="text" id="fname" name="fname">
+		</th>
+
+		<th>
+			<label for="city">City:</label><br>
+			<input type="text" id="city" name="city">
+		</th>
+
+		<th>
+      <!--Submit Button to add Data in the Table-->
+			<button (click)="submit()">Submit</button>
+		</th>
+	</tr>
+</table>
+
+<br>
+
+<!--Accumulative Data Table-->
+<table id="myTable"  width="700px" border="2">
+	<tr>
+    <!--Header Table-->
+		<th>
+			Select
+		</th>
+		<th>
+			Restaurant
+		</th>
+		<th>
+			City
+		</th>
+	</tr>
+  <!--Hidden Data for testing-->
+  <div style="display:none"><tr>
+		<td>
+			<input type="checkbox" name="chk" >
+      </td>
+		<td>New Restaurant</td>
+		<td>New City Location</td>
+	</tr>
+  </div>
+<!--Example Datas-->
+	<tr>
+		<td>
+			<input type="checkbox" name="chk" >
+      </td>
+		<td>Callifornia Burrito</td>
+		<td>San Jose</td>
+	</tr>
+
+	<tr>
+		<td>
+			<input type="checkbox" name="chk" >
+      </td>
+		<td>Hard Rock Cafe</td>
+		<td>Seattle</td>
+	</tr>
+</table>
+
+<br>
+
+<!--Delete Button-->
+<button (click)="deleteRow('dataTable')">Delete Row</button>
